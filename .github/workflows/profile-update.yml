@@ -1,0 +1,54 @@
+name: Update Profile README
+
+on:
+  schedule:
+    # Runs every hour
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  update-blog-posts:
+    name: Update Blog Posts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Update README with blog posts
+        uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          # Replace this with the RSS feed URL of your blog
+          feed_list: "[YOUR_BLOG_RSS_FEED_URL]"
+          readme_path: "./README.md"
+          max_post_count: 5 # Number of posts to list
+          committer_username: "github-actions[bot]"
+          committer_email: "github-actions[bot]@users.noreply.github.com"
+          
+  update-snake-animation:
+    name: Update Snake Animation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Generate contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          # Replace with your GitHub username
+          github_user_name: "[YOUR_USERNAME]"
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Commit and push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          # Check if there are changes to commit
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update contribution snake"
+            git push
+          else
+            echo "No changes to commit."
+          fi
