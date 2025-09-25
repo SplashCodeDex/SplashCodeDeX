@@ -1,4 +1,4 @@
-<h1 align="center">👋 Hey there, I'm Rizwan</h1>
+<h1 align="center">👋 Hey there, I'm CodeDeX</h1>
 
 <h3 align="center"> 🎓 CSE Student @ BRAC University | 💻 Python & Django Learner  </h3>
 
