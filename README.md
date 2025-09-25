@@ -19,14 +19,26 @@
 
 ### 👨‍💻 About Me
 
-- 🔭 I’m currently working on... 
-- 🌱 I’m currently learning... 
-- 👯 I’m looking to collaborate on... 
-- 🤔 I’m looking for help with... 
-- 💬 Ask me about... 
-- 📫 How to reach me: ...
-- 😄 Pronouns: ... 
-- ⚡ Fun fact: ... 
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+*   🔭 &nbsp; I’m currently working on **perfecting my GitHub profile!**
+*   🌱 &nbsp; I’m currently learning **GitHub Actions and automation.**
+*   👯 &nbsp; I’m looking to collaborate on **open source projects.**
+*   🤔 &nbsp; I’m looking for help with **new and exciting project ideas.**
+
+</td>
+<td width="50%" valign="top">
+
+*   💬 &nbsp; Ask me about **web development, design, and anything in between.**
+*   📫 &nbsp; How to reach me: **Check out my social links below!**
+*   😄 &nbsp; Pronouns: **He/Him**
+*   ⚡ &nbsp; Fun fact: **I believe a good cup of coffee can solve any coding bug.**
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -74,10 +86,9 @@
 <p align="center">
   <a href="https://github.com/SplashCodeDex" target="_blank"><img src="https://img.shields.io/badge/GitHub-282C34?logo=github&logoColor=white" /></a>
   <a href="https://x.com/DeXStudiosGh" target="_blank"><img src="https://img.shields.io/badge/Twitter-282C34?logo=x&logoColor=white" /></a>
-  <a href="https://www.linkedin.com/in/[YOUR_LINKEDIN_USERNAME]" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-282C34?logo=linkedin&logoColor=0077B5" /></a>
-  <a href="https://dev.to/[YOUR_DEVTO_USERNAME]" target="_blank"><img src="https://img.shields.io/badge/dev.to-282C34?logo=dev.to&logoColor=white" /></a>
-  <a href="https://stackoverflow.com/users/[YOUR_STACKOVERFLOW_USERID]/[YOUR_USERNAME]" target="_blank"><img src="https://img.shields.io/badge/StackOverflow-282C34?logo=stackoverflow&logoColor=F58025" /></a>
-  <a href="https://leetcode.com/u/[YOUR_LEETCODE_USERNAME]/" target="_blank"><img src="https://img.shields.io/badge/LeetCode-282C34?logo=leetcode&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/nicholas-gyanzo-874a11354" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-282C34?logo=linkedin&logoColor=0077B5" /></a>
+  <a href="https://dev.to/CodeDeX" target="_blank"><img src="https://img.shields.io/badge/dev.to-282C34?logo=dev.to&logoColor=white" /></a>
+  <a href="https://stackoverflow.com/users/44088461/codedex" target="_blank"><img src="https://img.shields.io/badge/StackOverflow-282C34?logo=stackoverflow&logoColor=F58025" /></a>
 </p>
 
 ---
