@@ -1,4 +1,5 @@
 const switcher = document.querySelector(".switcher");
+const switcher2 = document.querySelector(".switcher2");
 
 const trackPrevious = (el) => {
   const radios = el.querySelectorAll('input[type="radio"]');
@@ -22,3 +23,13 @@ const trackPrevious = (el) => {
 };
 
 trackPrevious(switcher);
+
+const themeRadios = switcher2.querySelectorAll('input[type="radio"]');
+themeRadios.forEach(radio => {
+    radio.addEventListener('change', () => {
+        document.body.classList.remove('dark', 'dim');
+        if (radio.checked) {
+            document.body.classList.add(radio.value);
+        }
+    });
+});

@@ -25,7 +25,7 @@ body {
     color 400ms cubic-bezier(1, 0, 0.4, 1);
 }
 
-body:has(input[value="dark"]:checked) {
+body.dark {
   --c-glass: #bbbbbc;
   --c-light: #fff;
   --c-dark: #000;
@@ -41,7 +41,7 @@ body:has(input[value="dark"]:checked) {
   --saturation: 150%;
 }
 
-body:has(input[value="dim"]:checked) {
+body.dim {
   --c-light: #99deff;
   --c-dark: #20001b;
   --c-glass: hsl(335 250% 74% / 1);
