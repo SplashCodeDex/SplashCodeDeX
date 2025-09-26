@@ -21,13 +21,16 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Github, Linkedin, Twitter, Sun, Moon } from "lucide-react";
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import { Github, Linkedin, Twitter } from "lucide-react";
 import { toast } from "sonner";
+import { Header } from "@/components/header";
 
 const projects = [
   {
@@ -47,6 +50,39 @@ const projects = [
   },
 ];
 
+const errors = [
+  {
+    code: "101",
+    description: "Invalid API Key",
+    solution:
+      "The API key provided is invalid. Please check your API key and try again.",
+  },
+  {
+    code: "102",
+    description: "Missing Parameters",
+    solution:
+      "A required parameter is missing from the request. Please check the documentation for the required parameters.",
+  },
+  {
+    code: "103",
+    description: "Not Found",
+    solution:
+      "The requested resource was not found. Please check the URL and try again.",
+  },
+  {
+    code: "104",
+    description: "Service Unavailable",
+    solution:
+      "The service is temporarily unavailable. Please try again later.",
+  },
+  {
+    code: "105",
+    description: "Internal Server Error",
+    solution:
+      "An unexpected error occurred on the server. Please contact support.",
+  },
+];
+
 export default function Home() {
   const [isContactOpen, setIsContactOpen] = useState(false);
   const { setTheme } = useTheme();
@@ -60,29 +96,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <header className="fixed top-0 left-0 right-0 z-10 flex justify-between items-center p-4 bg-background/50 backdrop-blur-md">
-        <h1 className="text-2xl font-bold">Your Name</h1>
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="outline" size="icon">
-              <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-              <span className="sr-only">Toggle theme</span>
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            <DropdownMenuItem onClick={() => setTheme("light")}>
-              Light
-            </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => setTheme("dark")}>
-              Dark
-            </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => setTheme("system")}>
-              System
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
-      </header>
+      <Header />
 
       <main className="container mx-auto px-4 py-16 pt-32">
         <motion.div
@@ -141,6 +155,32 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
+        </div>
+
+        <div className="mt-16">
+          <h2 className="text-3xl font-bold text-center mb-8">
+            Error Documentation
+          </h2>
+          <Card>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Error Code</TableHead>
+                  <TableHead>Description</TableHead>
+                  <TableHead>Solution</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {errors.map((error) => (
+                  <TableRow key={error.code}>
+                    <TableCell className="font-medium">{error.code}</TableCell>
+                    <TableCell>{error.description}</TableCell>
+                    <TableCell>{error.solution}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </Card>
         </div>
 
         <motion.div
