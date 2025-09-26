@@ -72,8 +72,8 @@ body.dim {
   display: flex;
   align-items: center;
   gap: 8px;
-  width: 168px;
-  max-width: 168px;
+  width: 320px;
+  max-width: 320px;
   height: 70px;
   box-sizing: border-box;
   padding: 8px 12px 10px;
@@ -132,6 +132,8 @@ body.dim {
 }
 
 .switcher2 {
+  width: 168px;
+  max-width: 168px;
   backdrop-filter: blur(8px) url(#switcher2) saturate(var(--saturation));
 }
 
@@ -254,8 +256,8 @@ body.dim {
   transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1),
     box-shadow 400ms cubic-bezier(1, 0, 0.4, 1),
     translate 400ms cubic-bezier(1, 0, 0.4, 1);
-  -webkit-animation: scaleToggle 440ms ease;
-          animation: scaleToggle 440ms ease;
+  -webkit-animation: scaleToggle2 440ms ease;
+          animation: scaleToggle2 440ms ease;
 }
 
 .switcher:has(input[c-option="2"]:checked)::after, .switcher2:has(input[c-option="2"]:checked)::after {
@@ -265,6 +267,24 @@ body.dim {
     translate 400ms cubic-bezier(1, 0, 0.4, 1);
   -webkit-animation: scaleToggle2 440ms ease;
           animation: scaleToggle2 440ms ease;
+}
+
+.switcher:has(input[c-option="3"]:checked)::after {
+  translate: 152px 0;
+  transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1),
+    box-shadow 400ms cubic-bezier(1, 0, 0.4, 1),
+    translate 400ms cubic-bezier(1, 0, 0.4, 1);
+  -webkit-animation: scaleToggle2 440ms ease;
+          animation: scaleToggle2 440ms ease;
+}
+
+.switcher:has(input[c-option="4"]:checked)::after {
+  translate: 228px 0;
+  transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1),
+    box-shadow 400ms cubic-bezier(1, 0, 0.4, 1),
+    translate 400ms cubic-bezier(1, 0, 0.4, 1);
+  -webkit-animation: scaleToggle3 440ms ease;
+          animation: scaleToggle3 440ms ease;
 }
 
 .switcher[c-previous="1"]:has(input[c-option="2"]:checked)::after, .switcher2[c-previous="1"]:has(input[c-option="2"]:checked)::after {
