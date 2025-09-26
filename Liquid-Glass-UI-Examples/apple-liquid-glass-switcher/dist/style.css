@@ -57,12 +57,18 @@ body:has(input[value="dim"]:checked) {
   --saturation: 200%;
 }
 
-.switcher {
+.switchers-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   position: fixed;
-  z-index: 1;
   top: 40px;
   left: 50%;
-  translate: -50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.switcher, .switcher2 {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -71,7 +77,6 @@ body:has(input[value="dim"]:checked) {
   height: 70px;
   box-sizing: border-box;
   padding: 8px 12px 10px;
-  margin: 0 auto;
   border: none;
   border-radius: 99em;
   font-size: var(--fz);
@@ -124,6 +129,10 @@ body:has(input[value="dim"]:checked) {
       );
   transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1),
     box-shadow 400ms cubic-bezier(1, 0, 0.4, 1);
+}
+
+.switcher2 {
+  backdrop-filter: blur(8px) url(#switcher2) saturate(var(--saturation));
 }
 
 .switcher__legend {
@@ -196,7 +205,7 @@ body:has(input[value="dim"]:checked) {
   scale: 1;
 }
 
-.switcher::after {
+.switcher::after, .switcher2::after {
   content: "";
   position: absolute;
   left: 4px;
@@ -239,7 +248,7 @@ body:has(input[value="dim"]:checked) {
       );
 }
 
-.switcher:has(input[c-option="1"]:checked)::after {
+.switcher:has(input[c-option="1"]:checked)::after, .switcher2:has(input[c-option="1"]:checked)::after {
   translate: 0 0;
   transform-origin: right;
   transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1),
@@ -249,7 +258,7 @@ body:has(input[value="dim"]:checked) {
           animation: scaleToggle 440ms ease;
 }
 
-.switcher:has(input[c-option="2"]:checked)::after {
+.switcher:has(input[c-option="2"]:checked)::after, .switcher2:has(input[c-option="2"]:checked)::after {
   translate: 76px 0;
   transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1),
     box-shadow 400ms cubic-bezier(1, 0, 0.4, 1),
@@ -258,11 +267,11 @@ body:has(input[value="dim"]:checked) {
           animation: scaleToggle2 440ms ease;
 }
 
-.switcher[c-previous="1"]:has(input[c-option="2"]:checked)::after {
+.switcher[c-previous="1"]:has(input[c-option="2"]:checked)::after, .switcher2[c-previous="1"]:has(input[c-option="2"]:checked)::after {
   transform-origin: left;
 }
 
-.switcher[c-previous="3"]:has(input[c-option="2"]:checked)::after {
+.switcher[c-previous="3"]:has(input[c-option="2"]:checked)::after, .switcher2[c-previous="3"]:has(input[c-option="2"]:checked)::after {
   transform-origin: right;
 }
 
