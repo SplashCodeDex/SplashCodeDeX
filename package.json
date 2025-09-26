@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.9.1",
+    "next-themes": "^0.4.6",
+    "react-fast-marquee": "^1.6.5"
+  },
+  "devDependencies": {
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss-animate": "^1.0.7"
+  }
+}
