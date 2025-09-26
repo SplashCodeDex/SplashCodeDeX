@@ -134,14 +134,16 @@ body:has(input[value="dim"]:checked) {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 .switcher__input {
   clip: rect(0 0 0 0);
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   height: 1px;
   width: 1px;
   overflow: hidden;
@@ -243,7 +245,8 @@ body:has(input[value="dim"]:checked) {
   transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1),
     box-shadow 400ms cubic-bezier(1, 0, 0.4, 1),
     translate 400ms cubic-bezier(1, 0, 0.4, 1);
-  animation: scaleToggle 440ms ease;
+  -webkit-animation: scaleToggle 440ms ease;
+          animation: scaleToggle 440ms ease;
 }
 
 .switcher:has(input[c-option="2"]:checked)::after {
@@ -251,7 +254,8 @@ body:has(input[value="dim"]:checked) {
   transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1),
     box-shadow 400ms cubic-bezier(1, 0, 0.4, 1),
     translate 400ms cubic-bezier(1, 0, 0.4, 1);
-  animation: scaleToggle2 440ms ease;
+  -webkit-animation: scaleToggle2 440ms ease;
+          animation: scaleToggle2 440ms ease;
 }
 
 .switcher[c-previous="1"]:has(input[c-option="2"]:checked)::after {
@@ -268,7 +272,20 @@ body:has(input[value="dim"]:checked) {
   transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1),
     box-shadow 400ms cubic-bezier(1, 0, 0.4, 1),
     translate 400ms cubic-bezier(1, 0, 0.4, 1);
-  animation: scaleToggle3 440ms ease;
+  -webkit-animation: scaleToggle3 440ms ease;
+          animation: scaleToggle3 440ms ease;
+}
+
+@-webkit-keyframes scaleToggle {
+  0% {
+    scale: 1 1;
+  }
+  50% {
+    scale: 1.1 1;
+  }
+  100% {
+    scale: 1 1;
+  }
 }
 
 @keyframes scaleToggle {
@@ -283,12 +300,36 @@ body:has(input[value="dim"]:checked) {
   }
 }
 
+@-webkit-keyframes scaleToggle2 {
+  0% {
+    scale: 1 1;
+  }
+  50% {
+    scale: 1.2 1;
+  }
+  100% {
+    scale: 1 1;
+  }
+}
+
 @keyframes scaleToggle2 {
   0% {
     scale: 1 1;
   }
   50% {
     scale: 1.2 1;
+  }
+  100% {
+    scale: 1 1;
+  }
+}
+
+@-webkit-keyframes scaleToggle3 {
+  0% {
+    scale: 1 1;
+  }
+  50% {
+    scale: 1.1 1;
   }
   100% {
     scale: 1 1;
@@ -367,13 +408,17 @@ a {
   color: var(--c-action);
   text-decoration-thickness: 0.05em;
   text-underline-position: under;
-  text-decoration-color: color-mix(in srgb, currentColor, transparent 70%);
+  -webkit-text-decoration-color: color-mix(in srgb, currentColor, transparent 70%);
+          text-decoration-color: color-mix(in srgb, currentColor, transparent 70%);
+  transition: color 160ms, -webkit-text-decoration-color 160ms;
   transition: color 160ms, text-decoration-color 160ms;
+  transition: color 160ms, text-decoration-color 160ms, -webkit-text-decoration-color 160ms;
 }
 
 a:hover {
   color: color-mix(in srgb, var(--c-action), var(--c-content) 40%);
-  text-decoration-color: color-mix(in srgb, currentColor, transparent 30%);
+  -webkit-text-decoration-color: color-mix(in srgb, currentColor, transparent 30%);
+          text-decoration-color: color-mix(in srgb, currentColor, transparent 30%);
 }
 
 img {
@@ -382,7 +427,8 @@ img {
   width: 100%;
   max-width: 700px;
   aspect-ratio: 5 / 3;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .box {
