@@ -66,8 +66,8 @@ body:has(input[value="dim"]:checked) {
   display: flex;
   align-items: center;
   gap: 8px;
-  width: 244px;
-  max-width: 244px;
+  width: 168px;
+  max-width: 168px;
   height: 70px;
   box-sizing: border-box;
   padding: 8px 12px 10px;
@@ -266,15 +266,7 @@ body:has(input[value="dim"]:checked) {
   transform-origin: right;
 }
 
-.switcher:has(input[c-option="3"]:checked)::after {
-  translate: 152px 0;
-  transform-origin: left;
-  transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1),
-    box-shadow 400ms cubic-bezier(1, 0, 0.4, 1),
-    translate 400ms cubic-bezier(1, 0, 0.4, 1);
-  -webkit-animation: scaleToggle3 440ms ease;
-          animation: scaleToggle3 440ms ease;
-}
+
 
 @-webkit-keyframes scaleToggle {
   0% {
