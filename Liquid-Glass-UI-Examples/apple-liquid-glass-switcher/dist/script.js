@@ -17,12 +17,18 @@ const trackPrevious = (el) => {
       if (radio.checked) {
         el.setAttribute("c-previous", previousValue ?? "");
         previousValue = radio.getAttribute("c-option");
+        el.setAttribute('data-animate', '');
+        setTimeout(() => {
+            el.removeAttribute('data-animate');
+        }, 440);
       }
     });
   });
 };
 
 trackPrevious(switcher);
+
+trackPrevious(switcher2);
 
 const themeRadios = switcher2.querySelectorAll('input[type="radio"]');
 themeRadios.forEach(radio => {

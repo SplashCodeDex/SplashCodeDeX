@@ -248,51 +248,70 @@ body.dim {
         var(--c-dark) calc(var(--glass-reflex-dark) * 8%),
         transparent
       );
+  transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1),
+    box-shadow 400ms cubic-bezier(1, 0, 0.4, 1),
+    translate 400ms cubic-bezier(1, 0, 0.4, 1);
+}
+
+.switcher[data-animate]:has(input[c-option="1"]:checked)::after, .switcher2[data-animate]:has(input[c-option="1"]:checked)::after {
+  -webkit-animation: scaleToggle3 440ms ease;
+          animation: scaleToggle3 440ms ease;
+}
+
+.switcher[data-animate]:has(input[c-option="2"]:checked)::after, .switcher2[data-animate]:has(input[c-option="2"]:checked)::after {
+  -webkit-animation: scaleToggle3 440ms ease;
+          animation: scaleToggle3 440ms ease;
+}
+
+.switcher[data-animate]:has(input[c-option="3"]:checked)::after {
+  -webkit-animation: scaleToggle3 440ms ease;
+          animation: scaleToggle3 440ms ease;
+}
+
+.switcher[data-animate]:has(input[c-option="4"]:checked)::after {
+  -webkit-animation: scaleToggle3 440ms ease;
+          animation: scaleToggle3 440ms ease;
 }
 
 .switcher:has(input[c-option="1"]:checked)::after, .switcher2:has(input[c-option="1"]:checked)::after {
   translate: 0 0;
   transform-origin: right;
-  transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1),
-    box-shadow 400ms cubic-bezier(1, 0, 0.4, 1),
-    translate 400ms cubic-bezier(1, 0, 0.4, 1);
-  -webkit-animation: scaleToggle2 440ms ease;
-          animation: scaleToggle2 440ms ease;
 }
 
 .switcher:has(input[c-option="2"]:checked)::after, .switcher2:has(input[c-option="2"]:checked)::after {
   translate: 76px 0;
-  transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1),
-    box-shadow 400ms cubic-bezier(1, 0, 0.4, 1),
-    translate 400ms cubic-bezier(1, 0, 0.4, 1);
-  -webkit-animation: scaleToggle2 440ms ease;
-          animation: scaleToggle2 440ms ease;
 }
 
 .switcher:has(input[c-option="3"]:checked)::after {
   translate: 152px 0;
-  transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1),
-    box-shadow 400ms cubic-bezier(1, 0, 0.4, 1),
-    translate 400ms cubic-bezier(1, 0, 0.4, 1);
-  -webkit-animation: scaleToggle2 440ms ease;
-          animation: scaleToggle2 440ms ease;
 }
 
 .switcher:has(input[c-option="4"]:checked)::after {
   translate: 228px 0;
-  transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1),
-    box-shadow 400ms cubic-bezier(1, 0, 0.4, 1),
-    translate 400ms cubic-bezier(1, 0, 0.4, 1);
-  -webkit-animation: scaleToggle3 440ms ease;
-          animation: scaleToggle3 440ms ease;
 }
 
-.switcher[c-previous="1"]:has(input[c-option="2"]:checked)::after, .switcher2[c-previous="1"]:has(input[c-option="2"]:checked)::after {
-  transform-origin: left;
+.switcher[c-previous="1"]:has(input:checked)::after {
+    transform-origin: left;
 }
 
-.switcher[c-previous="3"]:has(input[c-option="2"]:checked)::after, .switcher2[c-previous="3"]:has(input[c-option="2"]:checked)::after {
-  transform-origin: right;
+.switcher[c-previous="2"]:has(input[c-option="1"]:checked)::after {
+    transform-origin: right;
+}
+
+.switcher[c-previous="2"]:has(input[c-option="3"]:checked)::after {
+    transform-origin: left;
+}
+
+.switcher[c-previous="3"]:has(input[c-option="2"]:checked)::after {
+    transform-origin: right;
+}
+
+.switcher[c-previous="3"]:has(input[c-option="4"]:checked)::after {
+    transform-origin: left;
+}
+
+.switcher[c-previous="4"]:has(input:checked)::after {
+    transform-origin: right;
 }
 
 
