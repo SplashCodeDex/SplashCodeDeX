@@ -5,7 +5,7 @@
 
   <!-- Animated Header -->
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=30&pause=1000&color=00B871&center=true&vCenter=true&width=800&lines=Hey+there%2C+I'm+Nicholas+Adima+Gyanzo;CodeDeX" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=30&pause=1000&color=00B871&center=true&vCenter=true&width=800&lines=Hey+there%2C+I'm+Nicholas+Adima+Gyanzo;CodeDeX;CEO of DeXStudios" alt="Typing SVG" />
   </a>
 
   <!-- Profile View Counter -->
@@ -23,18 +23,18 @@
 <tr>
 <td width="50%" valign="top">
 
-*   🔭 &nbsp; I’m currently working on **perfecting my GitHub profile!**
-*   🌱 &nbsp; I’m currently learning **GitHub Actions and automation.**
-*   👯 &nbsp; I’m looking to collaborate on **open source projects.**
-*   🤔 &nbsp; I’m looking for help with **new and exciting project ideas.**
+*   🔭 &nbsp; I’m currently working on **General Advanced AI driven tools!**
+*   💀 &nbsp; I’m currently learning **Advanced AI hacking Integration**
+*   👯 &nbsp; I’m looking to collaborate on **Open source projects.**
+*   🤔 &nbsp; I’m looking for help with **New and exciting project ideas.**
 
 </td>
 <td width="50%" valign="top">
 
-*   💬 &nbsp; Ask me about **web development, design, and anything in between.**
+*   💬 &nbsp; Ask me about **web development, design, Advanced tools, Automations**
 *   📫 &nbsp; How to reach me: **Check out my social links below!**
 *   😄 &nbsp; Pronouns: **He/Him**
-*   ⚡ &nbsp; Fun fact: **I believe a good cup of coffee can solve any coding bug.**
+*   ⚡ &nbsp; Fun fact: **I believe a good cup of coffee can advanced any casual ideas.**
 
 </td>
 </tr>
@@ -50,6 +50,7 @@
   <img src="https://img.shields.io/badge/JavaScript-282C34?logo=javascript&logoColor=F7DF1E" alt="JavaScript" />
   <img src="https://img.shields.io/badge/Git-282C34?logo=git&logoColor=F05032" alt="Git" />
   <img src="https://img.shields.io/badge/Docker-282C34?logo=docker&logoColor=2496ED" alt="Docker" />
+
 </p>
 
 ---
