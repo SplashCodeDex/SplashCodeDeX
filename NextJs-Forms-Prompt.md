@@ -1,3 +1,26 @@
+# Next.js Forms Prompt
+URL: /prompts/nextjs-forms
+AI prompt to transform Claude Code, Cursor, or Windsurf into Next.js + Server Actions form expert. Complete validation with React, shadcn/ui and TypeScript.
+
+***
+
+title: Next.js Forms Prompt
+description: AI prompt to transform Claude Code, Cursor, or Windsurf into Next.js + Server Actions form expert. Complete validation with React, shadcn/ui and TypeScript.
+icon: FileText
+--------------
+
+<Callout title="Need help setting up AI prompts?">
+  [Join our Discord community](https://discord.com/invoke/Z9NVtNE7bj) to share
+  AI prompts and get help configuring your coding assistants.
+</Callout>
+
+<br />
+
+Transform your AI coding assistant into a Senior Full-Stack Developer expert in Next.js 15 Server Actions, modern form handling, and progressive enhancement. This prompt ensures Claude, Cursor, and other AI tools build production-ready forms with comprehensive validation, error handling, and seamless user experiences using React 19 patterns.
+
+## The Prompt
+
+```markdown
 # Next.js 15 Server Actions + Form Handling Master
 
 You are a Senior Full-Stack Developer and expert in Next.js 15 App Router, Server Actions, and modern form handling patterns. You specialize in building production-ready forms with progressive enhancement, comprehensive validation (client & server), error handling, and seamless user experiences using React 19 and shadcn/ui integration.
@@ -128,3 +151,71 @@ You are a Senior Full-Stack Developer and expert in Next.js 15 App Router, Serve
 
 ## Knowledge Updates
 When working with Next.js 15 Server Actions, React 19 form features, or modern validation patterns, search for the latest documentation and best practices to ensure implementations follow current standards, security practices, and accessibility guidelines for production-ready applications.
+```
+
+## How to use it
+
+<Tabs items={["Claude", "Cursor", "Windsurf", "Copilot"]}>
+  <Tab value="Claude">Add to your project's `CLAUDE.md`</Tab>
+  <Tab value="Cursor">Create `.cursorrules` in your project root</Tab>
+  <Tab value="Windsurf">Add to `.windsurfrules` in your project</Tab>
+  <Tab value="Copilot">Add as a comment block in your main files</Tab>
+</Tabs>
+
+## What this prompt does
+
+Copy this Next.js forms prompt into your AI tool and watch it deliver modern form excellence:
+
+* **Complete Server Actions integration** - Progressive enhancement, FormData handling, validation, error management, and cache invalidation using Next.js 15 patterns
+* **Modern React 19 patterns** - useActionState for form state, useOptimistic for immediate feedback, proper error boundaries, and enhanced form experiences
+* **Production-ready validation** - Shared Zod schemas for client/server validation, field-level errors, async validation, and comprehensive security practices
+* **Advanced form features** - Multi-step forms, file uploads, dynamic fields, auto-save functionality, and complex form relationships with proper state management
+* **Complete accessibility support** - WCAG 2.1 AA compliance, keyboard navigation, screen reader support, ARIA implementation, and progressive enhancement fallbacks
+
+## Prompts you might like
+
+<Cards>
+  <Card href="/prompts/nextjs-ai" title="Next.js AI Prompt" description="AI SDK v5, streaming responses, Server Actions with shadcn/ui integration" />
+
+  <Card href="/prompts/nextjs-realtime" title="Next.js Realtime Prompt" description="WebSockets, Server-Sent Events, real-time communication patterns" />
+
+  <Card href="/prompts/react-supabase" title="React Supabase Prompt" description="Full-stack applications, authentication, real-time features" />
+
+  <Card href="/prompts/stripe-payments" title="Stripe Payment Prompt" description="Payment integration, subscription management, webhooks" />
+
+  <Card href="/prompts/react-shadcn" title="React Components Prompt" description="shadcn/ui component development, accessibility, TypeScript" />
+
+  <Card href="/prompts/react-animation" title="React Animation Prompt" description="Framer Motion, micro-interactions, 60fps performance" />
+</Cards>
+
+## FAQ
+
+<Accordions type="single">
+  <Accordion id="what-is-prompt" title="What is an AI prompt?">
+    It's instructions that tell AI coding assistants how to behave. Like giving them a job description so they become specialists in Next.js Server Actions and form handling.
+  </Accordion>
+
+  <Accordion id="cursor-rules" title="What are cursor rules?">
+    Instructions you put in a `.cursorrules` file that tell Cursor AI what kind of code to write.
+  </Accordion>
+
+  <Accordion id="claude-md" title="What is CLAUDE.md?">
+    A markdown file Claude Code reads to understand your project. Put instructions there and Claude becomes your Next.js forms and Server Actions expert.
+  </Accordion>
+
+  <Accordion id="windsurf-rules" title="What are Windsurf rules?">
+    Same as cursor rules but for Windsurf editor. Goes in `.windsurfrules` file in your project root.
+  </Accordion>
+
+  <Accordion id="progressive-enhancement" title="What is progressive enhancement in forms?">
+    Forms that work without JavaScript and get enhanced when JS loads. This prompt ensures forms function properly in all scenarios with proper fallbacks and accessibility.
+  </Accordion>
+
+  <Accordion id="server-actions-vs-api" title="Why Server Actions over API routes?">
+    Server Actions provide better progressive enhancement, automatic CSRF protection, simpler form handling, and better integration with React 19 form features like useActionState.
+  </Accordion>
+
+  <Accordion id="production-ready" title="Is this suitable for production apps?">
+    Yes, includes security best practices, accessibility standards, error handling, validation patterns, and performance optimization used in production form systems.
+  </Accordion>
+</Accordions>
