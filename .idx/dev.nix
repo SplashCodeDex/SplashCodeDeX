@@ -28,7 +28,7 @@
           "python"
           "-m"
           "http.server"
-          "$PORT"
+          "9005"
         ];
         manager = "web";
         cwd = "Liquid-Glass-UI-Examples/apple-liquid-glass-switcher/dist";
