@@ -56,9 +56,6 @@ export default function Home() {
       <Header />
 
       <main className="container mx-auto px-4 py-16 pt-32">
-        <div className="text-center mb-8">
-          <Button>Click me</Button>
-        </div>
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -116,29 +113,6 @@ export default function Home() {
             ))}
           </div>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 0.5 }}
-          className="text-center mt-16"
-        >
-          <Dialog>
-            <DialogTrigger asChild>
-              <Button
-                size="lg"
-              >
-                Contact Me
-              </Button>
-            </DialogTrigger>
-            <DialogContent>
-              <DialogHeader>
-                <DialogTitle>Get in Touch</DialogTitle>
-              </DialogHeader>
-              <p>Your contact form will be here.</p>
-            </DialogContent>
-          </Dialog>
-        </motion.div>
       </main>
     </div>
   );
